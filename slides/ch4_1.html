@@ -41,7 +41,7 @@ class: center, middle, inverse, title-slide
 ### Master in Computational Social Science
 ]
 .date[
-### <p>Licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> Last generated: 2023-12-10</p>
+### <p>Licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> Last generated: 2025-03-27</p>
 ]
 
 ---
@@ -622,6 +622,26 @@ gitGraph TB:
 ---
 class: base24
 
+# Undoing Changes
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+## Exercise:
+### What git commands did VSCode run?
+(see next slide)
+
+---
+class: base24
+
+# Undoing Changes
+
+.footnote[[#32405](https://github.com/microsoft/vscode/issues/32405)]
+
+![](assets/img/ch4/vscode-delete-all.png)
+
+---
+class: base24
+
 # Going Back, Tagging
 
 &lt;pre class="mermaid" style="zoom:1.5;width:22%;position:fixed;top:80px;right:10px;background:#FAFAFA"&gt;
@@ -950,14 +970,14 @@ sequenceDiagram
 
 # Contributing to Other Projects
 
-1. Go to https://github.com/IBiDat/dataviz-git-test
+1. Go to https://github.com/IBiDat/git-test
 2. **Fork** the project into your GitHub account
 3. Now you're in your fork, copy the _Code &gt; Clone HTTPS_ URL
 4. Set up the local copy in your terminal
   ```bash
   $ cd .. # go one level up, because we were in 'test-repo'
-  $ git clone https://github.com/&lt;your_user&gt;/dataviz-git-test.git
-  $ cd data-git-test # change into your local copy
+  $ git clone https://github.com/&lt;your_user&gt;/git-test.git
+  $ cd git-test # change into your local copy
   ```
 5. Edit the `edit-me.txt` file, add something after your name
 6. Inspect the result with `git status/diff`, then commit and push the changes
@@ -1300,9 +1320,9 @@ gitGraph LR:
 <script src="assets/remark-latest.min.js"></script>
 <script src="assets/macros.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "vs",
-"highlightLines": true,
-"countIncrementalSlides": false
+  "highlightStyle": "vs",
+  "highlightLines": true,
+  "countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
